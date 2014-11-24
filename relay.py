@@ -7,7 +7,7 @@ from twisted.web.resource import Resource
 from twisted.internet import reactor
 
 url = os.environ['slack_url']
-port = os.environ['relay_port']
+port = int(os.environ['relay_port'])
 docker_icon_url = 'https://pbs.twimg.com/profile_images/378800000124779041/fbbb494a7eef5f9278c6967b6072ca3e_200x200.png'
 headers = {'content-type': 'application/json'}
 
