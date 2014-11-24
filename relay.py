@@ -36,8 +36,7 @@ class Relay(Resource):
         print request.args
         payload = make_slack_post(json.loads(request.content.read()))
         pprint.pprint(payload)
-        print requests.post(url, data=json.dumps(payload), headers=headers)
-        return ''
+        return requests.post(url, data=json.dumps(payload), headers=headers)
 
 root = Resource()
 root.putChild('relay', Relay())
