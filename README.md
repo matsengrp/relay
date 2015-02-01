@@ -39,11 +39,11 @@ Set shell variables for your webhook URL and a port (which can be any integer be
 
 Clone this repo.
 Make a file `channel_selector.json` in the repo directory that maps the repo path on Docker Hub to a channel in your Slack chat.
-For example, to map <https://registry.hub.docker.com/u/psathyrella/ham/> and [my fork of ham](https://registry.hub.docker.com/u/psathyrella/ham/) to the bcell channel, the file is:
+For example, to map <https://registry.hub.docker.com/u/psathyrella/ham/> and [our C++ build environment](https://registry.hub.docker.com/u/matsengrp/cpp/) to the relevant channels, the file would be:
 
     {
         "psathyrella/ham":"#bcell",
-        "matsen/ham":"#bcell"
+        "matsengrp/cpp":"#infrastructure"
     }
 
 
